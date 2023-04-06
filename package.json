@@ -3,7 +3,17 @@
   "displayName": "Code Flexer",
   "description": "Retype your code as it should be.",
   "version": "0.0.1",
-  "icon": "https://raw.githubusercontent.com/agistarakha/my-image/main/Frame%201.png",
+  "icon": "images/icon.png",
+  "license": "GNU General Public License 3.0",
+  "bugs": {
+    "url": "https://github.com/agistarakha/code-flexer/issues",
+    "email": "agistarakhasnc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agistarakha/code-flexer.git"
+  },
+  "homepage": "https://github.com/agistarakha/code-flexer/blob/main/README.md",
   "engines": {
     "vscode": "^1.77.0"
   },
