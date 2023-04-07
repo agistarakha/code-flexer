@@ -63,7 +63,7 @@ function activate(context) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
 
   let disposable = vscode.commands.registerCommand(
-    "code-flexer.flexMyCode",
+    "on-sterocode.runSteroCode",
     async function () {
       let uri = "";
 
@@ -110,7 +110,7 @@ function activate(context) {
       let speed = await vscode.window.showQuickPick(
         ["1", "2", "3", "4", "5", "6", "7", "8"],
         {
-          placeHolder: "Select flex code speed(speed=character/type)",
+          placeHolder: "Select SteroCode speed(speed=character/type)",
         }
       );
       let selectedSpeed = parseInt(speed);
@@ -165,7 +165,7 @@ function activate(context) {
           if (lines >= totalLines) {
             setTimeout(() => {
               isEnded = true;
-              // vscode.commands.executeCommand("code-flexer.reloadWindow");
+              // vscode.commands.executeCommand("on-sterocode.reloadSteroCode");
             }, 2000);
           }
         }
@@ -178,7 +178,7 @@ function activate(context) {
   context.subscriptions.push(disposable);
 
   let reloadCommand = vscode.commands.registerCommand(
-    "code-flexer.reloadWindow",
+    "on-sterocode.reloadSteroCode",
     () => {
       vscode.commands.executeCommand("workbench.action.reloadWindow");
       // disposable.dispose();

@@ -1,9 +1,9 @@
 {
   "name": "code-flexer",
   "publisher": "AgistaRakhasanca",
-  "displayName": "Code Flexer",
+  "displayName": "On SteroCode",
   "description": "Retype your code as it should be.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "icon": "images/icon.png",
   "license": "GNU General Public License 3.0",
   "bugs": {
@@ -26,12 +26,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "code-flexer.flexMyCode",
-        "title": "Flex Code"
+        "command": "on-sterocode.runSteroCode",
+        "title": "Run SteroCode"
       },
       {
-        "command": "code-flexer.reloadWindow",
-        "title": "Flex Reload"
+        "command": "on-sterocode.reloadSteroCode",
+        "title": "Reload SteroCode"
       }
     ]
   },
